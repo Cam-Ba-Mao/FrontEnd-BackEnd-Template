@@ -3,7 +3,7 @@ run css
 scss style.scss style.css -o
 
 # Desgin
-https://www.figma.com/file/DiORvS2iQ0gJlqyrVg8C94/PENN-WEBSITE?node-id=11%3A7
+
 
 ### Install Sass
 
