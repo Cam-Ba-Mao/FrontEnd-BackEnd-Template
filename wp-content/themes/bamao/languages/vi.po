@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-03-20 15:13+0100\n"
+"PO-Revision-Date: 2015-03-20 15:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:5
+msgid "<h2>404 NOT FOUND</h2>"
+msgstr ""
+
+#: 404.php:6
+msgid ""
+"<p>The article you were looking for was not found, but maybe try looking "
+"again!"
+msgstr ""
+
+#: 404.php:9
+msgid "<h3>Content categories: </h3>"
+msgstr ""
+
+#: 404.php:14
+msgid "Tag Cloud"
+msgstr ""
+
+#: archive.php:7
+#, php-format
+msgid "Posts tagged: %1$s"
+msgstr "Từ khoá: %1$s"
+
+#: archive.php:9
+#, php-format
+msgid "Post categorized: %1$s"
+msgstr ""
+
+#: archive.php:11
+#, php-format
+msgid "Daily Archives: %1$s"
+msgstr ""
+
+#: archive.php:13
+#, php-format
+msgid "Monthly Archives: %1$s"
+msgstr ""
+
+#: archive.php:15
+#, php-format
+msgid "Yearly Archives: %1$s"
+msgstr ""
+
+#: content-image.php:10
+#, php-format
+msgid "This image post contains %1$s photos"
+msgstr ""
+
+#: content-none.php:2
+msgid "Nothing post found"
+msgstr ""
+
+#: functions.php:57
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:61
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:63
+msgid "Default sidebar"
+msgstr ""
+
+#: functions.php:125
+msgid "Older Posts"
+msgstr ""
+
+#: functions.php:128
+msgid "Newest Posts"
+msgstr ""
+
+#: functions.php:166
+#, php-format
+msgid "<span class=\"author\">Posted by %1$s"
+msgstr "<span class=\"author\">Viết bởi %1$s"
+
+#: functions.php:169
+#, php-format
+msgid "<span class=\"date-published\"> at %1$s"
+msgstr ""
+
+#: functions.php:172
+#, php-format
+msgid "<span class=\"category\"> in %1$s "
+msgstr ""
+
+#: functions.php:178
+msgid "Leave a comment"
+msgstr ""
+
+#: functions.php:179
+msgid "One comment"
+msgstr ""
+
+#: functions.php:180
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: functions.php:181
+msgid "Read all comments"
+msgstr ""
+
+#: functions.php:203
+msgid "<p>Page: "
+msgstr ""
+
+#: functions.php:205
+msgid "Next Page"
+msgstr ""
+
+#: functions.php:206
+msgid "Previous Page"
+msgstr ""
+
+#: functions.php:214
+msgid "...[Read More]"
+msgstr ""
+
+#: functions.php:226
+#, php-format
+msgid "Tagged in %1$s"
+msgstr "Thẻ: %1$s"
+
+#: search.php:9
+#, php-format
+msgid "We found %1$s articles for your search query."
+msgstr ""
+
+#: sidebar.php:5
+msgid "This is sidebar. You have to add some widgets"
+msgstr ""

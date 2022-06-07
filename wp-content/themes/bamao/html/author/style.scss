@@ -1,0 +1,81 @@
+$blue-color: #48aafd;
+$green-color: #00c899;
+html {
+    font-size: 62.5% ;
+}
+* {
+    box-sizing: border-box; //dùng để trừ ra các padding margin border để đúng kích thước desgin
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.author {
+    max-width: 1000px;
+    margin: 2rem auto;
+    
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    height: 40rem;
+    &__image {
+        width: 35%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__content {
+        width: 65%;
+        padding: 3rem;
+        background-color: #eee;
+    }
+    &__name {
+        color: #333;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+    &__desc {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+    }
+    &__contact,
+    &-social {
+        display: flex;
+        align-items: center;
+    }
+
+    &-social {
+        &__item {
+            margin-left: 1rem;
+        }
+    }
+
+}
+@media screen and (max-width:767px) {
+    .author {
+        padding: 0 2rem;
+        flex-direction: column;
+        height: auto;
+        &__image ,
+        &__content {
+            width: 100%;
+            border-radius: 0 0 1rem 1rem;
+        }
+        &__image {
+            height: 20rem;
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+}

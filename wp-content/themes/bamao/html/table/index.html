@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Google</title>
+    <link rel="stylesheet" href="./cssreset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap5/bootstrap.min.css"/>
+</head>
+<body>
+    <section class="iedg-login">
+        <div class="container"> 
+            <h1 class="iedg-title">Login</h1>
+            <div class="row"> 
+                <div class="col-lg-6">
+                    <a href="#">
+                        <div class="iedg-login__google-btn">
+                            <div class="google-icon-wrapper">
+                                <img class="google-icon" src="./assets/images/login/google.svg"/>
+                            </div>
+                            <p class="btn-text"><b>Đăng nhập bằng google</b></p>
+                        </div>
+                    </a>
+                    <form action="" class="signup-form">
+                        <div class="signup-form__group">
+                            <label for="email" class="signup-form__label">Email</label>
+                            <input type="text" class="signup-form__input" id="email" required placeholder="Email">
+                        </div>
+                        <div class="signup-form__group">
+                            <label for="password" class="signup-form__label">Password</label>
+                            <input type="text" class="signup-form__input" id="password" required placeholder="Password" minlength="10">
+                        </div>
+                        <button class="signup-form__submit" type="submit">Đăng nhập</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./bootstrap5/bootstrap.min.js"></script>
+</body>
+</html>

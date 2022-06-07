@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.iedg-login {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .iedg-login {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.iedg-login .iedg-title {
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+}
+.iedg-login__google-btn {
+  width: 216px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+.iedg-login__google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: white;
+}
+.iedg-login__google-btn .google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.iedg-login__google-btn .btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.iedg-login__google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.iedg-login__google-btn:active {
+  background: #1669F2;
+}
+
+.signup {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.signup-form__group {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.signup-form__label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  transform: translateX(1rem);
+  cursor: pointer;
+}
+.signup-form__input {
+  padding: 1rem 2.5rem;
+  border: 1px solid #eee;
+  background-color: #fafbff;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.signup-form__input:focus {
+  background-color: white;
+  border-color: #FC556F;
+}
+.signup-form__input:focus + .signup-form__check {
+  background-color: #FC556F;
+  color: white;
+}
+.signup-form__submit {
+  color: black;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid red;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 65px;
+  padding: 8px 30px;
+}
+.signup-form__submit:hover {
+  color: white;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
