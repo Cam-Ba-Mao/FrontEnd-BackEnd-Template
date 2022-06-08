@@ -1,18 +1,25 @@
 # Frontend Backend Template
 run css
-scss style.scss style.css -o
+
 
 # Desgin
 
 
+### Install NodeJS
+
+`https://nodejs.org/en/blog/release/v14.17.3/`
+
 ### Install Sass
 
-`https://nodejs.org/en/download/releases/`
+`npm install -g sass`
+
+Run css
+sass style.scss style.css --watch
 
 ## Extenstion helpful for VS code  ###
 
 1. Prettier Code Formatter
-2. Sass
+2. SCSS IntelliSense
 3. Auto Close Tag
 4. Auto Complete Tag
 5. Auto Rename Tag
@@ -26,6 +33,5 @@ scss style.scss style.css -o
 13. htmltagwrap 
 14. Live Server
 15. Live Server Preview
-16. Prettier - Code formatter
-17. SCSS IntelliSense
-18. Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more
+16. Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more
+17. WordPress Snippets
