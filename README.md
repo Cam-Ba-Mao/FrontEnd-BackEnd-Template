@@ -1,14 +1,10 @@
 # Frontend Backend Template
-run css
 
-
-# Install
-
-## Install NodeJS
+### Install NodeJS
 
 `https://nodejs.org/en/blog/release/v14.17.3/`
 
-## Install Sass
+### Install Sass
 
 `npm install -g sass`
 
