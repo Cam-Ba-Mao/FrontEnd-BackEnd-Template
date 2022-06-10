@@ -11,6 +11,7 @@
 ### Run css
 run Command Prompt to the path
 `cd .\wp-content\themes\bamao\html\`
+and
 `sass style.scss style.css --watch`
 
 ## Extenstion helpful for VS code  ###
