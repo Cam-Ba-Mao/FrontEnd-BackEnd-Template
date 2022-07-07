@@ -16,6 +16,8 @@ require_once( CORE . "/navigation.php" );
 require_once( CORE . "/ThemeCustomizer.php" );
 require_once( CORE . "/Product/ProductHook.php" );
 require_once( CORE . "/Product/ProductFunctions.php" );
+require_once( CORE . "/Pages/Archive.php" );
+require_once( CORE . "/Pages/Home.php" );
 /**
 @ Thiet lap chieu rong noi dung
 **/

@@ -95,3 +95,6 @@ if( is_array($mainMenu) && count($mainMenu) > 0 ) {
 			</nav>
 		</header>
 		<!-- CLOSE HEADER-->
+		
+		<!-- START CONTENT-->
+        <main class="iedg-content">
