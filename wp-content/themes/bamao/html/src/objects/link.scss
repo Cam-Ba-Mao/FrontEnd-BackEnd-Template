@@ -1,0 +1,13 @@
+.iedg-link {
+    color: $black-4;
+    text-decoration: none;
+
+    &:hover {
+        color: $red;
+    }
+
+    svg[role="img"] {
+        width: 12px;
+        height: 12px;
+    }
+}
