@@ -1,0 +1,79 @@
+.pennacademy-news-event {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint-up(lg) {
+        padding-top: 3.375rem;
+        padding-bottom: 3.375rem;
+    }
+
+    .pennacademy-title {
+        margin-bottom: 2rem;
+    }
+    
+    &__wrap {
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        background-color: $white;
+        display: block;
+    }
+    
+   
+}
+
+.pennacademy-news {
+
+    &__wrap {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        &.iedg-img-drop {
+            padding-bottom: 190 / 305 * 100%;
+        }
+
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+
+    &__body {
+        padding: 1rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        color: $black;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 24px;
+        color: $black-6;
+    }
+
+    &__cta {
+        .iedg-btn {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 6px 24px;
+        }
+    }
+
+    &__footer {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .pennacademy-title {
+        margin-bottom: 2rem;
+    }
+
+}
