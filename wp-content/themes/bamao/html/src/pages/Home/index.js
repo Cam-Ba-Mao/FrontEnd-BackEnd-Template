@@ -213,6 +213,74 @@
         });
     }
 
+    $.handleMatchHeightBodyNews = function() {
+        if( $('.pennacademy-news__body').length > 0) {
+            $('.pennacademy-news__body').matchHeight();
+        }
+
+        // if( $('.pennacademy-news__desc').length > 0) {
+        //     $('.pennacademy-news__desc').matchHeight();
+        // }
+    }
+
+    function initEducationalPathway() {
+        if( $('.pennacademy-educational-pathway__list').length < 1 ) return;
+
+        $('.pennacademy-educational-pathway__list ').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            focusOnSelect: true,
+            centerPadding: 0,
+            dots: false,
+            arrows: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true
+        });
+
+        $('.pennacademy-educational-pathway__list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.pennacademy-educational-pathway__tab .pennacademy-educational-pathway__tab-item').removeClass('active');
+            $('.pennacademy-educational-pathway__tab .pennacademy-educational-pathway__tab-item:nth-child('+ (nextSlide + 1) +')').addClass('active');
+        });       
+    }
+
+    function handlerTabEducationalPathway() {
+        if( $('.pennacademy-educational-pathway__tab .pennacademy-educational-pathway__tab-item').length < 1 ) return;
+
+        $(document).on('click', '.pennacademy-educational-pathway__tab .pennacademy-educational-pathway__tab-item', function() {
+            $('.pennacademy-educational-pathway__list').slick('slickGoTo', $(this).index());
+        });
+    }
+
+    function myFunction() {
+        
+        // alert('Hello');
+        setTimeout(function(){
+            // console.log(123);
+            if( $('.pennacademy-training-bullet').length < 1 ) {
+                return;
+            }
+            else {
+                // console.log( "Index: " + $(".pennacademy-training-bullet.pennacademy-training__active").index() );
+                var bullet = $(".pennacademy-training-bullet.pennacademy-training__active").index();
+                console.log(bullet);
+                
+                if($('.pennacademy-training-bullet').length - 1 == bullet)
+                {
+                    $(".pennacademy-training-bullet:eq(0)").addClass('pennacademy-training__active');
+                    $(".pennacademy-training-bullet:eq("+bullet+")").removeClass('pennacademy-training__active');
+                    // console.log($('.pennacademy-training-bullet').length)
+                }
+                else {
+                    $(".pennacademy-training-bullet:eq("+(bullet + 1)+")").addClass('pennacademy-training__active');
+                    $(".pennacademy-training-bullet:eq("+bullet+")").removeClass('pennacademy-training__active');
+                }
+                myFunction();
+            }
+            
+        }, 3000);
+    }
+
     $(function () {
         initBanner();
         initTestimonial();
@@ -231,6 +299,19 @@
             handlePositionCountryContent();
         });
 
+        $.handleMatchHeightBodyNews();
+
         $('.isa-partner__item--body').matchHeight();
+
+        initEducationalPathway();
+        handlerTabEducationalPathway();
+        if( $('.pennacademy-educational-pathway__item').length > 0) {
+            setTimeout(function () {
+                let height = $('.pennacademy-educational-pathway__item.slick-current').outerHeight();
+                $('.pennacademy-educational-pathway__list .slick-list').css('height', height + 'px');
+            }, 300);
+        }
+        // handlerSliderPennacademyTraining();
+        myFunction();
     });
 })(jQuery);
