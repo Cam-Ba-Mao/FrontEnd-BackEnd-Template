@@ -1,0 +1,347 @@
+.pennacademy-news-details {
+    margin-top: 48px;
+
+    .pennacademy-title {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $black-1;
+    }
+
+    .pennacademy-news-info {
+        max-width: 100%;
+        overflow-x: auto;
+        margin-bottom: 2rem;
+        padding-bottom: .5rem;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 8px;
+            height: 4px;
+            border-radius: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $gray-700;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $gray-700;
+            border-radius: 10px;
+        }
+    }
+
+    .pennacademy-news-detail-link {
+        @include reset-list;
+        display: flex;
+        align-items: center;
+        
+        width: max-content;
+
+        li {
+            margin-right: 24px;
+        }
+        
+        a{
+            color: $black-2;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    &__inner {
+        padding: 24px 24px 28px 24px;
+    }
+
+    &__banner {
+        img {
+            border-radius: 8px;
+        }
+    }
+
+    &__avatar {
+        img {
+            margin-right: 12px;
+            max-width: 40px;
+            border-radius: 100%;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black-2;
+        }
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-2;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #000000;
+        }
+    }
+
+    &__comment {
+        position: relative;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-2;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #000000;
+        }
+    }
+
+    &__cta {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        
+        a {
+            display: flex;
+            width: 159px;
+            height: 38px;
+            background-color: $red;
+            color: $white !important;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__categories {
+        padding-top: 24px;
+        padding-left: 24px;
+        margin-bottom: 32px;
+        background: $white;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        
+        .pennacademy-categories-title {
+            color: $black-1;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 24px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 135px;
+                width: 32px;
+                height: 2px;
+                background-color: $red;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            list-style-image: url(../images/newsdetails/arrow-right.svg);
+        }
+        li {
+            margin-bottom: 16px;
+            border-bottom: 1px solid #EDEDEE;
+            padding-bottom: 12px;
+            &:last-child {
+                border-style: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        a {
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+        }
+    }
+
+    &__post {
+        padding-top: 24px;
+        padding-left: 24px;
+        margin-bottom: 32px;
+        background: $white;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        .pennacademy-post-title {
+            color: $black-1;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 24px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 200px;
+                width: 32px;
+                height: 2px;
+                background-color: $red;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            list-style-image: url(../images/newsdetails/file-text.svg);
+        }
+        li {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #EDEDEE;
+            &:last-child {
+                border-style: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            
+        }
+        a {
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+        }
+    }
+    &__tag {
+        padding-top: 24px;
+        padding-left: 24px;
+        margin-bottom: 3rem;
+        
+        background: $white;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        
+        .pennacademy-tag-title {
+            color: $black-1;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 70px;
+                width: 32px;
+                height: 2px;
+                background-color: $red;
+            }
+        }
+        .pennacademy-tag-link {
+            padding-left: 16px;
+            padding-bottom: 24px;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            li { 
+                height: 38px;
+                display: inline-block;
+                list-style: none;
+                background: $gray-800;
+                border-radius: 4px;
+                margin: 0 8px 8px 0;
+                
+            }
+            a {
+                display: flex;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: $black;
+                padding: 7px 16px;
+                
+            }
+          
+        }
+      
+    }
+    &__content {
+        line-height: 24px;
+        padding-bottom: 3rem;
+
+        h3 {
+            color: $black-1;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 1rem;
+        }
+
+        // ul {
+        //     background: #F4F7FA;
+        //     border-radius: 8px;
+        //     padding: 24px 0 24px 42px;
+        // }
+
+        blockquote {
+            position: relative;
+            background: #F9F9FA;
+            border-radius: 8px;
+            padding: 24px 32px 24px 80px;
+            &::before {
+                position: absolute;
+                padding-left: 32px;
+                left: 0;
+                content: url(../images/newsdetails/quote.svg);
+            }
+           
+        }
+
+        .wp-block-column:not(:first-child) {
+            margin-left: 24px;
+        }
+
+        img {
+            height: auto;
+        }
+    }
+}
+
+.pennacademy-post-comment {
+    h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

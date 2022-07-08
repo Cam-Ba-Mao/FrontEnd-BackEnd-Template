@@ -1,0 +1,140 @@
+extends ../../_core/layouts/layouts-default
+
+append vars
+    -bodyClass = "page-template-news-details"
+
+block container
+    section.pennacademy-breadcrumb
+        .container
+            .pennacademy-breadcrumb__inner
+                ul
+                    li.item
+                        a(href="#") Trang chủ
+                            +icon('arrow-right')
+                    li.item
+                        a(href="#") Tin tức
+                            +icon('arrow-right')
+                    li.item 
+                        a(href="#" class="active") Những lỗi sai ngữ pháp thường gặp trong Tiếng Đức
+
+    //- News Details
+    section.pennacademy-news-details
+        .container 
+            .row 
+                .col-lg-8
+                    .pennacademy-news-details__banner
+                        img.lazy(data-src="./images/newsdetails/banner.jpg" alt="banner")
+                    h1.pennacademy-title Những lỗi sai ngữ pháp thường gặp trong Tiếng Đức
+                    ul.pennacademy-news-detail-link
+                        li
+                            .pennacademy-news-details__cta  
+                                a(href="#" ) Thông tin hữu ích
+                        li
+                            .pennacademy-news-details__avatar
+                                img.lazy(data-src="./images/newsdetails/avatar.svg" alt="avatar")
+                                a(href="#" ) Long Nguyễn
+                        li
+                            .pennacademy-news-details__date
+                                a(href="#" ) 05/12/2021
+                        li
+                            .pennacademy-news-details__comment 
+                                a(href="#" ) 2 Bình luận
+
+                    .pennacademy-news-details__content 
+
+                        <p>Sai lỗi ngữ pháp là vấn đề phổ biến nhất của bất kỳ ai khi chọn học một ngôn ngữ mới nào. Tuy nhiên, có những cách khác nhau để giúp chúng ta cải thiện và tránh những lỗi sai về ngữ pháp không đáng có. Cùng Penn Academy điểm qua những lỗi mà các bạn lựa chọn học tiếng Đức thường hay mắc phải nhé!</p>
+                        <ul>
+                            <li>Lạm dụng thì tương lai</li>
+                            <li>Đặt động từ ở vị trí thứ 2</li>
+                            <li>Sử dụng Sie với người lạ</li>
+                            <li>Chọn động từ thì quá khứ phù hợp</li>
+                        </ul>
+                        <h3>Lạm dụng thì tương lai</h3>
+                        <p>Việc sử dụng thì tương lai trong tiếng Đức không quá khó. Tuy trên, trên thực tế, hầu hết những người Đức không không hay sử dụng thì tương lai. Khi nói tiếng Đức, nhiều người học thường nói:</p>
+                        <p>z.B: Ich werde am Wochenende nach Koblenz fahren (Tôi sẽ đến Koblenz vào cuối tuần).</p>
+                        <p>Nó là không sai trong tiếng Đức, nhưng nó có nghe có vẻ phức tạp. Từ am Wochenende (vào cuối tuần) cho đối tác trò chuyện của bạn biết rằng bạn đang đề cập đến tương lai, vì vậy hầu hết người bản ngữ sẽ chỉ đơn giản nói: Ich fahre am Wochenende nach Koblenz để diễn đạt điều tương tự.</p>
+                        <p>Ngôn ngữ phát triển để giúp giao tiếp hiệu quả nhất có thể, vì vậy, bạn có thể tiếp tục sử dụng thì hiện tại ngay cả khi đang nói về tương lai. </p>
+                        <div class="wp-block-columns">
+                            <div class="wp-block-column">
+                                <figure class="wp-block-image size-full"><a href="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1.jpg"><img loading="lazy" width="856" height="856" src="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1.jpg" alt="" class="wp-image-5840" srcset="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1.jpg 856w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1-300x300.jpg 300w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1-150x150.jpg 150w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1-768x768.jpg 768w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1-400x400.jpg 400w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai1-800x800.jpg 800w" sizes="(max-width: 856px) 100vw, 856px"></a></figure>
+                            </div>
+                            <div class="wp-block-column">
+                                <figure class="wp-block-image size-full"><a href="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai.jpg"><img loading="lazy" width="856" height="856" src="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai.jpg" alt="" class="wp-image-5839" srcset="http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai.jpg 856w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai-300x300.jpg 300w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai-150x150.jpg 150w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai-768x768.jpg 768w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai-400x400.jpg 400w, http://localhost/penn-school/wp-content/uploads/2021/12/lam-dung-tuong-lai-800x800.jpg 800w" sizes="(max-width: 856px) 100vw, 856px"></a></figure>
+                            </div>
+                        </div>
+                        <p>Ngôn ngữ phát triển để giúp giao tiếp hiệu quả nhất có thể, vì vậy, bạn có thể tiếp tục sử dụng thì hiện tại ngay cả khi đang nói về tương lai.</p>
+                        <blockquote class="wp-block-quote">
+                            
+                            <p>Sai lỗi ngữ pháp là vấn đề phổ biến nhất của bất kỳ ai khi chọn học một ngôn ngữ mới nào. Tuy nhiên, có những cách khác nhau để giúp chúng ta cải thiện và tránh những lỗi sai về ngữ pháp không đáng có.</p>
+                        </blockquote>
+                        <p>Ngôn ngữ tiếng Anh có cấu trúc câu rõ ràng: Chủ ngữ-động từ-tân ngữ (SVO). Trong tiếng Đức, những câu đầu tiên bạn học rất đơn giản. Chúng tuân theo cùng một cấu trúc, vì vậy bạn có thể cho rằng quy tắc là giống nhau.</p>
+                        <p>Tuy nhiên, trong tiếng Đức các câu sẽ xoay quanh vị trí của động từ. Trong các câu giao tiếp đơn giản bằng tiếng Đức, động từ sẽ đứng ở vị trí thứ hai. Điều đó có nghĩa là một khi bạn thêm bất cứ thứ gì khác trước khi câu bắt đầu, bạn cần đặt động từ trước chủ ngữ.</p>
+                        <h3>Sử dụng Sie với người lạ</h3>
+                        <p>Ở Đức, chúng tôi rất coi trọng hình thức của mình. Từ “bạn” trong tiếng Anh có thể được dịch theo nhiều cách, vì vậy điều quan trọng là phải chọn từ đúng.</p>
+                        <p>Sử dụng du khi bạn đang nói chuyện với bạn bè, trẻ em hoặc động vật.</p>
+                        <p>Sử dụng Sie khi bạn đang nói chuyện với người lạ trưởng thành, bất kỳ ai trong môi trường trang trọng hoặc cửa hàng và trên điện thoại.</p>
+                        <p>Sử dụng ihr khi bạn đang nói chuyện với một nhóm bạn.</p>
+                        <p>Nếu bạn lo lắng về việc nghe có vẻ quá trang trọng với Sie, đừng lo lắng. Hầu hết người Đức sẽ vui vẻ hướng dẫn bạn trong cuộc trò chuyện và họ có thể “chào mời” bằng cách nói</p>
+                        <p>Wir können du sagen hoặc du kannst du zu mir sagen? (Chúng ta có thể sử dụng du, bạn có thể gọi tôi là du?).</p>
+                        <h3>Chọn động từ thì quá khứ phù hợp</h3>
+                        <p>Trong tiếng Đức, cách phổ biến nhất để nói về quá khứ là sử dụng Perfekt, một thì rất giống với thì quá khứ hoàn thành trong tiếng Anh.</p>
+                        <p>Ví dụ: bạn nói Ich habe gegessen cho “Tôi đã ăn”.</p>
+                        <p>Mẹo với thì quá khứ trong tiếng Đức là biết khi nào thì sử dụng động từ sein và khi nào thì sử dụng động từ haben (to have).</p>
+                        <p>Trong tiếng Anh, hầu như bạn luôn nói “I have” trong các thì này: Tôi đã ăn, tôi đã nhảy, tôi đã học. Nhưng trong tiếng Đức, đôi khi chúng ta sử dụng động từ sein (to be) và bạn sẽ cần tìm hiểu khi nào sử dụng từng động từ.</p>
+                        <p>Một quy tắc đơn giản là trong Perfekt của Đức, bạn sử dụng một dạng sein cho các động từ chuyển động hoặc chuyển tiếp.</p>
+                    
+                .col-lg-4
+                    .pennacademy-news-details__categories
+                        .pennacademy-news-details__inner
+                            h3.pennacademy-categories-title Categories
+                            ul
+                                li
+                                    a(href="#" ) Thông tin hữu ích (5)
+                                li
+                                    a(href="#" ) Chiến lược & Phát triển (2)
+                                li
+                                    a(href="#" ) Đầu tư & Hợp tác (6)
+                                li
+                                    a(href="#" ) Hoạt động cộng đồng (4)
+                    .pennacademy-news-details__post
+                        .pennacademy-news-details__inner
+                            h3.pennacademy-post-title Bài viết gần nhất
+                            ul
+                                li
+                                    a(href="#" ) Những lỗi sử dụng từ vựng thường gặp trong tiếng Đức
+                                li
+                                    a(href="#" ) Những cách thể hiện tình yêu trong tiếng Đức
+                                li
+                                    a(href="#" ) Cách kết thư trong tiếng Đức
+                                li
+                                    a(href="#" ) Phương pháp học hiểu tiếng Đức từ gốc của từ
+                                li
+                                    a(href="#" ) Kỹ năng viết thư chuẩn trong tiếng Đức
+                    .pennacademy-news-details__tag
+                        h3.pennacademy-tag-title Tags
+                        .pennacademy-tag-link
+                            ul 
+                                li
+                                    a(href="#" ) Viết thư tiếng Đức
+                                li
+                                    a(href="#" ) Tiếng Đức
+                                li
+                                    a(href="#" ) Ngữ pháp
+                                li
+                                    a(href="#" ) Video Tiếng Đức
+                                li
+                                    a(href="#" ) Khoá học Tiếng Đức
+    //- CTA Group           
+    section.pennacademy-cta-group
+        .container
+            .pennacademy-cta-group__wrap
+                h2.pennacademy-title.pennacademy-title__medium Penn Academy
+                    br
+                    | Đôi cánh cho hành trình hội nhập toàn cầu !!
+                .pennacademy-cta-group__content 
+                    a(href="#") 
+                        img.lazy(data-src="./images/home/book.png" alt="")
+                        span Đăng ký học thử
+                    a(href="#") 
+                        img.lazy(data-src="./images/home/edit.png" alt="")
+                        span Đăng ký tư vấn

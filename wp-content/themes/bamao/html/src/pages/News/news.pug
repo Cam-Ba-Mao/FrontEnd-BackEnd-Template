@@ -1,0 +1,46 @@
+extends ../../_core/layouts/layouts-default
+
+append vars
+    -bodyClass = "page-template-news"
+
+block container
+    section.pennacademy-breadcrumb
+        .container
+            .pennacademy-breadcrumb__inner
+                ul
+                    li.item
+                        a(href="#") Trang chủ
+                            +icon('arrow-right')
+                    li.item 
+                        a(href="#" class="active") Tin tức
+    section.pennacademy-news-event
+        .container
+            h2.pennacademy-title.pennacademy-title__medium.text-center Tin tức & Ưu đãi
+            .pennacademy-tab-link
+                ul
+                    li
+                        a(href="#" class="active") Tất cả  
+                    li 
+                        a(href="#" ) Thông tin hữu ích
+                    li
+                        a(href="#" ) Chiến lược & Phát triển
+                    li
+                        a(href="#" ) Đầu tư & Hợp tác
+                    li
+                        a(href="#" ) Hoạt động cộng đồng
+            .pennacademy-news__list       
+                .row
+                    -
+                        items = [1,2,3,4, 5, 6, 7, 8, 9, 10]
+                        
+                    each val in items 
+                        .col-md-6.col-lg-4.col-xl-3.pennacademy-news__wrap
+                            a(href="#" class="pennacademy-news-event__item") 
+                                .pennacademy-news__image.iedg-img-drop 
+                                    img.lazy(data-src="./images/news/news"+ val + ".jpg" alt="")
+                                .pennacademy-news__body
+                                    .pennacademy-news__title Những lỗi sai ngữ pháp thường gặp trong tiếng Đức
+                                    .pennacademy-news__desc Sai lỗi ngữ pháp là vấn đề phổ biến nhất của bất kỳ ai khi chọn học một ngôn ngữ mới nào...
+                                .pennacademy-news__footer
+                                    .pennacademy-news__cta.text-right 
+                                        span.iedg-btn.iedg-btn-outline-primary Đọc tiếp

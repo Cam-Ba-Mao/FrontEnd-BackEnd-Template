@@ -4,7 +4,6 @@
     // add_action('iedg_content_tourist_destinations_page', [$this, 'contentTouristDestinations']);
     // add_action('iedg_content_school_system_page', [$this, 'contentSchoolSystem']);
     add_action('iedg_content_car_cat_page',  'contentCat');        
-    
 
     /**
      * Content Car Cat
@@ -34,18 +33,19 @@
             $data['link'] = get_term_link($categoryCurrent->term_id);
             $data['categoryCurrent'] =  $categoryCurrent;
             $data['categories'] = getCategories('term_order', 'ASC', 'false');
-            $data['post'] = getCar($categoryCurrent->term_id, $paged, $limit);
+            $data['car'] = getCar($categoryCurrent->term_id, $paged, $limit);
            
             set_query_var('data', $data);
-            get_template_part('templates/home');
+            get_template_part('templates/car/category/car-category');
             echo "đang vô car category";
-        } else {
-            // $data['link'] = $pageExperience ? get_permalink($pageExperience) : get_the_permalink();
-            $data['categories'] = getCategories('term_order', 'ASC', 'false');
-            $data['post'] = getCar(null, $paged, $limit);
-            
-            set_query_var('data', $data);
-            get_template_part('templates/home');
         }
+        // } else {
+        //     // $data['link'] = $pageExperience ? get_permalink($pageExperience) : get_the_permalink();
+        //     $data['categories'] = getCategories('term_order', 'ASC', 'false');
+        //     $data['car'] = getCar(null, $paged, $limit);
+            
+        //     set_query_var('data', $data);
+        //     get_template_part('templates/car-post');
+        // }
     }
     

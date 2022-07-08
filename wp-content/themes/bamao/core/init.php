@@ -21,28 +21,28 @@ if (!function_exists('dd')) {
     }
 }
 
-/**
- * Recursive Menu
- *
- * @param $menus
- * @param int $parent_id
- * @param string $char
- * @return array
- */
-function recursiveMenu($menus, $parent_id = 0, $char = '')
-{
-    $new = array();
+// /**
+//  * Recursive Menu
+//  *
+//  * @param $menus
+//  * @param int $parent_id
+//  * @param string $char
+//  * @return array
+//  */
+// function recursiveMenu($menus, $parent_id = 0, $char = '')
+// {
+//     $new = array();
 
-    foreach ($menus as $key => $menu) {
-        if ($menu->menu_item_parent == $parent_id) {
-            $menu->children = recursiveMenu($menus, $menu->ID);
-            unset($menus[$key]);
-            $new[] = $menu;
-        }
-    }
+//     foreach ($menus as $key => $menu) {
+//         if ($menu->menu_item_parent == $parent_id) {
+//             $menu->children = recursiveMenu($menus, $menu->ID);
+//             unset($menus[$key]);
+//             $new[] = $menu;
+//         }
+//     }
 
-    return $new;
-}
+//     return $new;
+// }
 
 // /* Kích hoạt tính năng Customizer */
 // function example_customizer_menu() {
