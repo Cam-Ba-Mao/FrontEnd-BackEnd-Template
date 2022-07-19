@@ -7,6 +7,88 @@
     font-weight: 700;
 }
 
+.pennacademy-why-us {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #F9F9F9;
+
+    @include breakpoint-up(lg) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+
+    &__header {
+        margin-bottom: 2.5rem;
+
+        @include breakpoint-up(lg) {
+            margin-bottom: 4.5rem;
+        }
+
+        .iedg-title {
+            color: #14203B;
+            @include breakpoint-down(sm) {
+                font-size: 24px;
+            }
+
+            &__medium {
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+
+                @include breakpoint-down(sm) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        @include breakpoint-up(lg) {
+            font-size: 18px;
+        }
+    }
+
+    &__item {
+        
+        padding-bottom: 2rem;
+
+        &--wrap {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            max-width: 372px;
+            margin: 0 auto;
+        }
+    }
+
+    &__image  {
+        max-width: 158px;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(lg) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(lg) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
 .pennacademy-training {
     padding-top: 4rem;
     padding-bottom: 6.25rem;

@@ -49,3 +49,18 @@ if (!function_exists('dd')) {
 //     add_theme_page( 'Customize', 'Customize', 'edit_theme_options', 'customize.php' );
 // }
 // add_action( 'admin_menu', 'example_customizer_menu' );
+
+
+ /**
+ * Add more upload file type
+ * @param $type
+ * @return array
+ */
+function allowUploadFileTypes($type)
+{
+	$type['svg'] = 'image/svg';
+	return $type;
+}
+add_filter('upload_mimes', 'allowUploadFileTypes');
+
+
