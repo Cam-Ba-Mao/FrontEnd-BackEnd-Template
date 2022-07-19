@@ -29,12 +29,12 @@ if ( !isset($content_width) ) {
 /**
 @ Khai bao chuc nang cua theme 
 **/
-if ( !function_exists('thachpham_theme_setup') ) {
-	function thachpham_theme_setup() {
+if ( !function_exists('bamao_theme_setup') ) {
+	function bamao_theme_setup() {
 
 		/* Thiet lap textdomain */
 		$language_folder = THEME_URL . '/languages';
-		load_theme_textdomain( 'thachpham', $language_folder );
+		load_theme_textdomain( 'bamao', $language_folder );
 		/* Tu dong them link RSS len <head> **/
 		add_theme_support( 'automatic-feed-links' );
 
@@ -59,12 +59,14 @@ if ( !function_exists('thachpham_theme_setup') ) {
 		);
 		add_theme_support( 'custom-background', $default_background );
 
+		
+
 		/* Them menu */
-		register_nav_menu( 'primary-menu', __('Primary Menu', 'thachpham') );
+		register_nav_menu( 'primary-menu', __('Primary Menu', 'bamao') );
 
 		/* Tao sidebar */
 		$sidebar = array(
-			'name' => __('Main Sidebar', 'thachpham'),
+			'name' => __('Main Sidebar', 'bamao'),
 			'id' => 'main-sidebar',
 			'description' => __('Default sidebar'),
 			'class' => 'main-sidebar',
@@ -73,8 +75,10 @@ if ( !function_exists('thachpham_theme_setup') ) {
 		);
 		register_sidebar( $sidebar );
 
+		
+
 	}
-	add_action( 'init', 'thachpham_theme_setup' );
+	add_action( 'init', 'bamao_theme_setup' );
 }
 
 /**
@@ -91,6 +95,11 @@ function theme_prefix_setup() {
 		'flex-height' => true
 	) );
 
+	/**
+	 * Add support woocommerce
+	 */
+	add_theme_support( 'woocommerce' );
+
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
@@ -100,28 +109,6 @@ function theme_prefix_the_custom_logo() {
 		the_custom_logo();
 	}
 
-}
-/*--------
-TEMPLATE FUNCTIONS */
-if (!function_exists('thachpham_header')) {
-	function thachpham_header() { ?>
-		<div class="site-name">
-			<?php
-				if ( is_home() ) {
-					printf( '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
-					get_bloginfo('url'),
-					get_bloginfo('description'),
-					get_bloginfo('sitename') );
-				} else {
-					printf( '<p><a href="%1$s" title="%2$s">%3$s</a></p>',
-					get_bloginfo('url'),
-					get_bloginfo('description'),
-					get_bloginfo('sitename') );			
-				}
-			?>
-		</div>
-		<div class="site-description"><?php bloginfo('description'); ?></div><?php 
-	}
 }
 
 
