@@ -1,0 +1,15 @@
+{
+    "name": "mao/core",
+    "description": "A Small Tool Framework for Ba Mao",
+    "authors": [
+        {
+            "name": "BaMao",
+            "email": "maocam@indochinagroup.edu.vn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mao\\": "core/"
+        }
+    }
+}
